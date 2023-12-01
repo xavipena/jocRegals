@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:model="clr-namespace:JocRegals"
+            xmlns:viewModel="clr-namespace:JocRegals.ViewModels"
+            x:DataType="viewModel:SecondRoundViewModel"
+            x:Class="JocRegals.Pages.SecondRound">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,25"
+                     Orientation="Vertical"
+                     HorizontalOptions="Center">
+            <Label Text="Segona volta" 
+                   FontSize="40"
+                   HorizontalOptions="Center"/>
+            <Label Text="Cal fer el que indica la tirada" 
+                   FontSize="30"
+                   HorizontalOptions="Center"/>
+            <Label Text="Quan acabi el temps cadascú pots obrir els seus regals" 
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+            <BoxView HeightRequest="20"/>
+            <ImageButton Margin="0,10,10,0"
+                         Source="dice.png" 
+                         BackgroundColor="Transparent"
+                         WidthRequest="150"
+                         HeightRequest="150"
+                         FlexLayout.AlignSelf="Center"
+                         FlexLayout.Grow="1"
+                         Clicked="Dice_Clicked"
+                         Aspect="AspectFit" />
+            <BoxView HeightRequest="20"/>
+            <Frame CornerRadius="10" 
+                   BorderColor="CadetBlue" 
+                   BackgroundColor="LightBlue"
+                   IsClippedToBounds="True"
+                   HeightRequest="80"
+                   WidthRequest="700"
+                   Padding="0"
+                   Margin="0,5,0,5">
+                <Label Text="{Binding Result}" 
+                       FontSize="40"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            </Frame>
+            <BoxView HeightRequest="20"/>
+            <Label Text="{Binding Clock}" 
+                       FontSize="140"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            <ImageButton Margin="0,10,10,0"
+                         IsVisible="{Binding State}"
+                         Source="go.png" 
+                         BackgroundColor="Transparent"
+                         WidthRequest="120"
+                         HeightRequest="120"
+                         FlexLayout.AlignSelf="Center"
+                         FlexLayout.Grow="1"
+                         Clicked="Continue_Clicked"
+                         Aspect="AspectFit" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

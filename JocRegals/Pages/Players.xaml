@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:JocRegals.Models"
+             xmlns:viewModel="clr-namespace:JocRegals.ViewModels" 
+             x:DataType="viewModel:PlayersViewModel"
+             x:Class="JocRegals.Pages.Players">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,25"
+                     Orientation="Vertical"
+                     HorizontalOptions="Center">
+            <Label Text="{Binding PageTitle}" 
+                   FontSize="40"
+                   HorizontalOptions="Center"/>
+            <Label Text="{Binding PageSubTitle}" 
+                   FontSize="30"
+                   HorizontalOptions="Center"/>
+            <Label Text="{Binding InfoLine}" 
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+            <BoxView HeightRequest="20"/>
+            <Label Text="Nom del jugador" 
+                   FontSize="20" FontAttributes="Bold"
+                   HorizontalOptions="Start"/>
+            <Frame CornerRadius="10" 
+                    BorderColor="CadetBlue" 
+                    BackgroundColor="LightBlue"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    Margin="0,5,0,5">
+                <Entry x:Name="PlayerName" 
+                   Text="{Binding PlayerName}" 
+                   Placeholder="Nom"   
+                   PlaceholderColor="Gray" 
+                   MinimumHeightRequest="50"
+                   TextColor="Black"/>
+            </Frame>
+            <StackLayout Margin="20,35,20,25"
+                     Orientation="Horizontal"
+                     HorizontalOptions="Center">
+                <ImageButton Margin="0,0,10,0"
+                         Source="adown.png" 
+                         BackgroundColor="Transparent"
+                         WidthRequest="80"
+                         HeightRequest="80"
+                         FlexLayout.AlignSelf="Center"
+                         FlexLayout.Grow="1"
+                         Clicked="ImageButtonAdd_Clicked"
+                         Aspect="AspectFit" />
+            </StackLayout>
+            <ListView
+                    HasUnevenRows="true"
+                    HeightRequest="300"
+                    IsGroupingEnabled="false"
+                    ItemSelected="Handle_ItemSelected"
+                    SeparatorVisibility="None"
+                    ItemsSource="{Binding PlayerList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Player">
+                        <ViewCell>
+                            <Frame CornerRadius="10" 
+                                   BorderColor="CadetBlue" 
+                                   BackgroundColor="LightBlue"
+                                   IsClippedToBounds="True"
+                                   Padding="0"
+                                   Margin="0,5,0,5">
+                                <StackLayout Margin="20,10,10,10"
+                                         WidthRequest="700"
+                                         HeightRequest="80"
+                                         Orientation="Horizontal" 
+                                         HorizontalOptions="Start">
+                                    <ImageButton Margin="0,0,10,0"
+                                             Source="{Binding PlayerPhoto}" 
+                                             BackgroundColor="Transparent"
+                                             WidthRequest="80"
+                                             HeightRequest="80"
+                                             FlexLayout.AlignSelf="Center"
+                                             FlexLayout.Grow="1"
+                                             Aspect="AspectFit" />
+                                    <Label Text="{Binding PlayerID}" 
+                                       VerticalOptions="Center"
+                                       FontSize="20"/>
+                                    <Label Text="{Binding PlayerName}" 
+                                       VerticalOptions="Center"
+                                       FontSize="40"/>
+                                    <StackLayout
+                                         WidthRequest="100"
+                                         HeightRequest="80"
+                                         Orientation="Horizontal" 
+                                         HorizontalOptions="EndAndExpand">
+                                        <ImageButton Source="trash.png" 
+                                                     BackgroundColor="Transparent"
+                                                     WidthRequest="80"
+                                                     HeightRequest="80"
+                                                     FlexLayout.AlignSelf="Center"
+                                                     FlexLayout.Grow="1"
+                                                     Clicked="Delete"
+                                                     Aspect="AspectFit" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ImageButton Margin="0,0,10,0"
+                        Source="OK.png" 
+                        BackgroundColor="Transparent"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        FlexLayout.AlignSelf="Center"
+                        FlexLayout.Grow="1"
+                        Clicked="ImageButtonEnd_Clicked"
+                        Aspect="AspectFit" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

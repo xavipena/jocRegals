@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:JocRegals"
+             xmlns:viewModel="clr-namespace:JocRegals.ViewModels"
+             x:DataType="viewModel:GiftsViewModel"
+             x:Class="JocRegals.Pages.Gifts">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,25"
+                     Orientation="Vertical"
+                     HorizontalOptions="FillAndExpand">
+            <Label Text="{Binding PageTitle}" 
+                   FontSize="40"
+                   HorizontalOptions="Center"/>
+            <Label Text="{Binding PageSubTitle}" 
+                   FontSize="30"
+                   HorizontalOptions="Center"/>
+            <Label Text="{Binding InfoLine}" 
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+            <BoxView HeightRequest="20"/>
+            <Frame CornerRadius="10" 
+                    OutlineColor="CadetBlue" 
+                    BackgroundColor="LightBlue"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    Margin="0,5,0,5">
+                <Entry x:Name="Subject" 
+                       Text="{Binding NumGifts}" 
+                       Placeholder="Nombre de regals" 
+                       PlaceholderColor="Gray" 
+                       MinimumHeightRequest="50"
+                       TextColor="Black"/>
+            </Frame>
+            <ImageButton Margin="0,0,10,0"
+                         Source="OK.png" 
+                         BackgroundColor="Transparent"
+                         WidthRequest="80"
+                         HeightRequest="80"
+                         FlexLayout.AlignSelf="Center"
+                         FlexLayout.Grow="1"
+                         Clicked="ImageButton_Clicked"
+                         Aspect="AspectFit" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

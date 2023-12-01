@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:JocRegals.ViewModels" 
+             xmlns:xfFlipViewControl="clr-namespace:JocRegals"
+             x:DataType="viewmodels:IntroViewModel"
+             x:Class="JocRegals.Pages.Intro"
+             BackgroundImageSource="">
+    <ContentPage.Content
+        NavigationPage.HasNavigationBar="False">
+        <Grid >
+            <Image Source="nadal_2021_v2_ca.jpg" Aspect="AspectFit" />
+            <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+                <BoxView HeightRequest="700"/>
+                <ImageButton x:Name="btnGo" Margin="10,0,10,0"
+                             Source="OK.png" 
+                             BackgroundColor="Transparent"
+                             WidthRequest="100"
+                             HeightRequest="93"
+                             FlexLayout.AlignSelf="Center"
+                             FlexLayout.Grow="1"
+                             Aspect="AspectFit" />
+                <ImageButton x:Name="btnPlay" Margin="10,0,10,0"
+                             Source="gift.png" 
+                             BackgroundColor="Transparent"
+                             WidthRequest="100"
+                             HeightRequest="93"
+                             FlexLayout.AlignSelf="Center"
+                             FlexLayout.Grow="1"
+                             Aspect="AspectFit" />
+                <Label Text="Copyright (C) 2023, Diari Digital.Net"
+                       FontSize="20"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+            </StackLayout>
+        </Grid >
+    </ContentPage.Content>
+</ContentPage>  

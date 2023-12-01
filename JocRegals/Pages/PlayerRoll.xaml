@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:JocRegals"
+             xmlns:viewModel="clr-namespace:JocRegals.ViewModels" 
+             x:DataType="viewModel:PlayerRollViewModel"
+             x:Class="JocRegals.Pages.PlayerRoll">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,25"
+                     Orientation="Vertical"
+                     HorizontalOptions="FillAndExpand">
+            <Label Text="{Binding PageTitle}" 
+                   FontSize="40"
+                   HorizontalOptions="Center"/>
+            <Label Text="Tirada per a veure qui comença" 
+                   FontSize="30"
+                   HorizontalOptions="Center"/>
+            <Label Text="Toca el botó per generar" 
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+            <BoxView HeightRequest="100"/>
+            <Frame CornerRadius="10" 
+                   HeightRequest="85"
+                   BorderColor="CadetBlue" 
+                   BackgroundColor="LightBlue"
+                   IsClippedToBounds="True"
+                   Padding="0"
+                   Margin="0,5,0,5">
+                <Label Text="{Binding PlayerName}" 
+                           FontSize="50"
+                           HorizontalOptions="Center"/>
+            </Frame>
+            <BoxView HeightRequest="100"/>
+            <ImageButton Margin="0,0,10,0"
+                         Source="STOP.png" 
+                         IsVisible="{Binding AltState}"
+                         BackgroundColor="Transparent"
+                         WidthRequest="80"
+                         HeightRequest="80"
+                         FlexLayout.AlignSelf="Center"
+                         FlexLayout.Grow="1"
+                         Clicked="ImageButton_Clicked"
+                         Aspect="AspectFit" />
+            <ImageButton Margin="0,0,10,0"
+                         Source="aright.png"
+                         IsVisible="{Binding State}"
+                         BackgroundColor="Transparent"
+                         WidthRequest="80"
+                         HeightRequest="80"
+                         FlexLayout.AlignSelf="Center"
+                         FlexLayout.Grow="1"
+                         Clicked="ImageButtonContinue_Clicked"
+                         Aspect="AspectFit" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

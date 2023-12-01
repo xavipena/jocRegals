@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JocRegals.Pages.Final">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,25"
+                     Orientation="Vertical"
+                     HorizontalOptions="Center">
+            <Label Text="FINAL" 
+                   FontSize="40"
+                   HorizontalOptions="Center"/>
+            <Label Text="Obrir els regals!" 
+                   FontSize="30"
+                   HorizontalOptions="Center"/>
+            <Label Text="Cadascú obra els seus regals" 
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+            <BoxView HeightRequest="20"/>
+            <Frame CornerRadius="10" 
+                    BorderColor="CadetBlue" 
+                    BackgroundColor="LightBlue"
+                    IsClippedToBounds="True"
+                    HeightRequest="140"
+                   WidthRequest="700"
+                    Padding="0"
+                    Margin="0,5,0,5">
+                <Label Text="Obrir els regals!!" 
+                       FontSize="80"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            </Frame>
+            <BoxView HeightRequest="20"/>
+            <Image Source="gift.png" 
+                   HeightRequest="225"
+                   WidthRequest="225"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
