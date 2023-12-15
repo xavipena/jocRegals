@@ -110,6 +110,7 @@ namespace JocRegals.ViewModels
                 // Show button to continue
                 State = true;
             }
+            else State = false;
         }
 
         public void LoadSampleData()

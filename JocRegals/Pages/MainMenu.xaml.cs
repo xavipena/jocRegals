@@ -27,7 +27,7 @@ namespace JocRegals.Pages
             // TOREMOVE
             // test data
             // -----------------------------
-            vm.LoadSampleData();
+            //vm.LoadSampleData();
             // -----------------------------
         }
 

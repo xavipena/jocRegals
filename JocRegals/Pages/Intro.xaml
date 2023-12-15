@@ -8,31 +8,39 @@
              BackgroundImageSource="">
     <ContentPage.Content
         NavigationPage.HasNavigationBar="False">
-        <Grid >
-            <Image Source="nadal_2021_v2_ca.jpg" Aspect="AspectFit" />
-            <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
-                <BoxView HeightRequest="700"/>
-                <ImageButton x:Name="btnGo" Margin="10,0,10,0"
-                             Source="OK.png" 
-                             BackgroundColor="Transparent"
-                             WidthRequest="100"
-                             HeightRequest="93"
-                             FlexLayout.AlignSelf="Center"
-                             FlexLayout.Grow="1"
-                             Aspect="AspectFit" />
-                <ImageButton x:Name="btnPlay" Margin="10,0,10,0"
-                             Source="gift.png" 
-                             BackgroundColor="Transparent"
-                             WidthRequest="100"
-                             HeightRequest="93"
-                             FlexLayout.AlignSelf="Center"
-                             FlexLayout.Grow="1"
-                             Aspect="AspectFit" />
-                <Label Text="Copyright (C) 2023, Diari Digital.Net"
-                       FontSize="20"
-                       TextColor="White"
-                       HorizontalOptions="Center" />
-            </StackLayout>
-        </Grid >
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40" BackgroundColor="SlateGray">
+            <Frame BorderColor="LightGray"
+                   HasShadow="True"
+                   CornerRadius="12"
+                   HeightRequest="600">
+                <Image Source="nadal_2023_ca.jpg" Aspect="AspectFit" />
+            </Frame>
+            <BoxView HeightRequest="100"/>
+            <Label Text="El joc del Nadal"
+                    FontSize="70"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+            <BoxView HeightRequest="50"/>
+            <ImageButton x:Name="btnGo" Margin="10,0,10,0"
+                            Source="OK.png" 
+                            BackgroundColor="Transparent"
+                            WidthRequest="100"
+                            HeightRequest="93"
+                            FlexLayout.AlignSelf="Center"
+                            FlexLayout.Grow="1"
+                            Aspect="AspectFit" />
+            <ImageButton x:Name="btnPlay" Margin="10,0,10,0"
+                            Source="gift.png" 
+                            BackgroundColor="Transparent"
+                            WidthRequest="100"
+                            HeightRequest="93"
+                            FlexLayout.AlignSelf="Center"
+                            FlexLayout.Grow="1"
+                            Aspect="AspectFit" />
+            <Label Text="Copyright (C) 2023, Diari Digital.Net"
+                    FontSize="20"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>  

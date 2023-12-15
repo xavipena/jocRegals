@@ -15,7 +15,7 @@
             <Label Text="Cal fer el que indica la tirada" 
                    FontSize="30"
                    HorizontalOptions="Center"/>
-            <Label Text="Quan acabi el temps cadascú pots obrir els seus regals" 
+            <Label Text="Quan acabi el temps cadascú pot obrir els seus regals" 
                    FontSize="20"
                    HorizontalOptions="Center"/>
             <BoxView HeightRequest="20"/>
@@ -33,12 +33,13 @@
                    BorderColor="CadetBlue" 
                    BackgroundColor="LightBlue"
                    IsClippedToBounds="True"
-                   HeightRequest="80"
+                   HeightRequest="150"
                    WidthRequest="700"
                    Padding="0"
                    Margin="0,5,0,5">
                 <Label Text="{Binding Result}" 
                        FontSize="40"
+                       Padding="10"
                        VerticalOptions="Center"
                        HorizontalOptions="Center"/>
             </Frame>

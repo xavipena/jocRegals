@@ -47,7 +47,7 @@ namespace JocRegals.ViewModels
             Random rnd = new Random();
             int dice = rnd.Next(1, 7); // 1d6
 
-            if (dice >= 5) 
+            if (dice >= 4) 
             {
                 Singleton.numberOfGifts -= 1;
                 Result = "Agafa un regal del centre";

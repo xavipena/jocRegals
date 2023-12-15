@@ -665,3 +665,4 @@ C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\Jo
 C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals.Android\obj\Debug\130\android\assets\Plugin.SimpleAudioPlayer.dll
 C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals.Android\obj\Debug\130\android\assets\Plugin.SimpleAudioPlayer.dll.mdb
 C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals.Android\obj\Debug\130\android\assets\System.IO.dll
+C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals.Android\obj\Debug\130\res\drawable\nadal_2023_ca.jpg

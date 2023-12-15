@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JocRegals")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+532b4d64918b496bfa45cb3b78a812e32dacc4a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("JocRegals")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JocRegals")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

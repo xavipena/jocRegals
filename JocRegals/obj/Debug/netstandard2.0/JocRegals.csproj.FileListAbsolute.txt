@@ -22,3 +22,4 @@ C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\Jo
 C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals\obj\Debug\netstandard2.0\Pages\Timers.xaml.g.cs
 C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals\obj\Debug\netstandard2.0\Pages\Final.xaml.g.cs
 C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals\obj\Debug\netstandard2.0\Pages\SecondRound.xaml.g.cs
+C:\Users\xpena\OneDrive - INVERAMA SA\xcavas\visual studio\Projects\JocRegals\JocRegals\obj\Debug\netstandard2.0\JocRegals.sourcelink.json

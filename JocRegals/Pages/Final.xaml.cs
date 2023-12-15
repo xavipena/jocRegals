@@ -22,5 +22,9 @@ namespace JocRegals.Pages
             player.Load(Sound.Final); 
             player.Play();
         }
+        private void Btn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
     }
 }

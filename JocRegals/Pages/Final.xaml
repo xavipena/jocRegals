@@ -15,7 +15,7 @@
             <Label Text="Cadascú obra els seus regals" 
                    FontSize="20"
                    HorizontalOptions="Center"/>
-            <BoxView HeightRequest="20"/>
+            <BoxView HeightRequest="50"/>
             <Frame CornerRadius="10" 
                     BorderColor="CadetBlue" 
                     BackgroundColor="LightBlue"
@@ -24,7 +24,7 @@
                    WidthRequest="700"
                     Padding="0"
                     Margin="0,5,0,5">
-                <Label Text="Obrir els regals!!" 
+                <Label Text="Obriu els regals!!" 
                        FontSize="80"
                        VerticalOptions="Center"
                        HorizontalOptions="Center"/>
@@ -33,6 +33,15 @@
             <Image Source="gift.png" 
                    HeightRequest="225"
                    WidthRequest="225"/>
+            <ImageButton Margin="0,10,10,0"
+                         Source="aleft.png" 
+                         BackgroundColor="Transparent"
+                         WidthRequest="150"
+                         HeightRequest="150"
+                         FlexLayout.AlignSelf="Center"
+                         FlexLayout.Grow="1"
+                         Clicked="Btn_Clicked"
+                         Aspect="AspectFit" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
